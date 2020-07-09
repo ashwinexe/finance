@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block main %}
+<form action="/changepwd" method="post">
+    <p>
+        <input type="text" name="password" placeholder="Old Password" autofocus class="form-control"></p>
+        <p><input type="text" name="newpwd" placeholder="New Password" class="form-control"></p>
+        <p><input type="text" name="cnfnewpwd" placeholder="Confirm Password" class="form-control"></p>
+        <button type="submit" class="btn btn-danger">Change Password</button>
+</form>
+{% endblock %}
